@@ -1,0 +1,102 @@
+[
+  {
+    "model": "apps.user",
+    "pk": 1,
+    "fields": {
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "address": "Kulas Light, Apt. 556, Gwenborough, 92998-3874"
+    }
+  },
+  {
+    "model": "apps.user",
+    "pk": 2,
+    "fields": {
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "address": "Victor Plains, Suite 879, Wisokyburgh, 90566-7771"
+    }
+  },
+  {
+    "model": "apps.user",
+    "pk": 3,
+    "fields": {
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "address": "Douglas Extension, Suite 847, McKenziehaven, 59590-4157"
+    }
+  },
+  {
+    "model": "apps.user",
+    "pk": 4,
+    "fields": {
+      "name": "Patricia Lebsack",
+      "username": "Karianne",
+      "email": "Julianne.OConner@kory.org",
+      "address": "Hoeger Mall, Apt. 692, South Elvis, 53919-4257"
+    }
+  },
+  {
+    "model": "apps.user",
+    "pk": 5,
+    "fields": {
+      "name": "Chelsey Dietrich",
+      "username": "Kamren",
+      "email": "Lucio_Hettinger@annie.ca",
+      "address": "Skiles Walks, Suite 351, Roscoeview, 33263"
+    }
+  },
+  {
+    "model": "apps.user",
+    "pk": 6,
+    "fields": {
+      "name": "Mrs. Dennis Schulist",
+      "username": "Leopoldo_Corkery",
+      "email": "Karley_Dach@jasper.info",
+      "address": "Norberto Crossing, Apt. 950, South Christy, 23505-1337"
+    }
+  },
+  {
+    "model": "apps.user",
+    "pk": 7,
+    "fields": {
+      "name": "Kurtis Weissnat",
+      "username": "Elwyn.Skiles",
+      "email": "Telly.Hoeger@billy.biz",
+      "address": "Rex Trail, Suite 280, Howemouth, 58804-1099"
+    }
+  },
+  {
+    "model": "apps.user",
+    "pk": 8,
+    "fields": {
+      "name": "Nicholas Runolfsdottir V",
+      "username": "Maxime_Nienow",
+      "email": "Sherwood@rosamond.me",
+      "address": "Ellsworth Summit, Suite 729, Aliyaview, 45169"
+    }
+  },
+  {
+    "model": "apps.user",
+    "pk": 9,
+    "fields": {
+      "name": "Glenna Reichert",
+      "username": "Delphine",
+      "email": "Chaim_McDermott@dana.io",
+      "address": "Dayna Park, Suite 449, Bartholomebury, 76495-3109"
+    }
+  },
+  {
+    "model": "apps.user",
+    "pk": 10,
+    "fields": {
+      "name": "Clementina DuBuque",
+      "username": "Moriah.Stanton",
+      "email": "Rey.Padberg@karina.biz",
+      "address": "Kattie Turnpike, Suite 198, Lebsackbury, 31428-2261"
+    }
+  }
+]
