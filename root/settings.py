@@ -1,5 +1,6 @@
 import os
 import os.path
+from datetime import timedelta
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -25,6 +26,7 @@ INSTALLED_APPS = [
     'apps',
     'rest_framework',
     'drf_spectacular',
+    'django_filters'
 ]
 
 MIDDLEWARE = [
@@ -56,6 +58,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'root.wsgi.application'
+AUTH_USER_MODEL = 'apps.User'
 
 DATABASES = {
     'default': {
@@ -101,12 +104,28 @@ STATIC_URL = 'static/'
 
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES':(
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    # 'PAGE_SIZE': 2
 }  # YOUR SETTINGS
 
+
+
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'Your Project API',
-    'DESCRIPTION': 'Your project description',
+    'TITLE': 'DRF P_37',
+    'DESCRIPTION': 'My first project',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
+    'COMPONENT_SPLIT_REQUEST': True,
     # OTHER SETTINGS
 }
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(days=5),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1), }

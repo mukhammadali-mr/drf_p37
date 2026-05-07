@@ -2,6 +2,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
+from rest_framework_simplejwt.views import TokenRefreshView, TokenObtainPairView
 
 urlpatterns = [
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
@@ -10,4 +11,5 @@ urlpatterns = [
     path('redoc', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
     path('admin/', admin.site.urls),
     path('api/v1/', include('apps.urls')),
+
 ]
